@@ -16,9 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 #from homepage.views import index
+from django.contrib.auth import views
+from django.conf.urls import include, url
 
 urlpatterns = [
     path('', include('homepage.urls')), # 127.0.0.1/
+    #url(r'^accounts/login/$', views.login, name='login'),
     path('admin/', admin.site.urls),
     #path('', include('webprog.urls')),
 ]

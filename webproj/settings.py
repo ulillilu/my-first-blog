@@ -27,6 +27,7 @@ DEBUG = True
 # 접근 주소 할당
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
+LOGIN_REDIRECT_URL = '/'
 
 # Application definition
 # 사용하고자 하는 App을 넣어줘야 함 
